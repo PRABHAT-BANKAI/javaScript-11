@@ -36,3 +36,7 @@ console.log(d / 2); // return quetient 5.5
 let e = 14;
 
 console.log(e % 2);
+
+
+
+

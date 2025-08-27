@@ -40,6 +40,8 @@
 
 12. Write a JavaScript code snippet that uses `console.log` to display the values of variables `a = 5`, `b = 10`, and the result of their addition.
 
+
+
 ## `if` Statement
 
 13. Write a JavaScript code snippet that checks if a given number is positive. Use an `if` statement and display the result using `console.log`.
