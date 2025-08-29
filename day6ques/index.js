@@ -49,18 +49,41 @@ let result = firstWord + secondWord;
 
 console.log(result); // "summervacation"
 
-let a = 10;
+// let a = 10;
 
-let b = 20;
+// let b = 20;
 
 // a=  20
 // b = 10
 
-let temp = a; // 10// third variable swap a and b
+// let temp = a; // 10// third variable swap a and b
 
-a = b; // 20
+// a = b; // 20
 
-b = temp;
+// b = temp;
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
+
+
+// console.log("hello"+true)
+
+// console.log( 15+5 +"12")// concetinate
+// console.log("15"+5+12)
+
+
+
+//a = 15
+// b = 20
+
+
+let a = 15;
+let b = 20;
+
+a = a+b // 35
+b = a-b//   35-20 // 15
+
+a = a-b // 35 - 15 // 20
+
+console.log("a",a)
+console.log("b",b)
