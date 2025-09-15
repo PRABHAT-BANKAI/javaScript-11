@@ -61,3 +61,8 @@ sum(25,5,1)
 // let batman = function  (){
 
 // }
+
+// subtraction
+// multipication
+// division
+// modulus 
