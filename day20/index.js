@@ -41,27 +41,44 @@
 // let store2 = Object.values(student);
 // console.log(store2);
 
+// let object = {
+//   userName: "batman",
+//   subjects: ["english", "maths", "html"],
+
+//   show: function () {
+//     console.log("hello from school");
+//   },
+
+//   testSubject: {
+//     hindi: 45,
+//     maths: 77,
+//     science: 66,
+//     enlglish: 88,
+//   },
+// };
+
+// let arrray = ["hindi", "maths", "science", "english"];
+
+// console.log(object.subjects[2]);
+
+// console.log(object.testSubject[arrray[1]])//object.testSubject["maths"]
+
+// // object.show();
+
 let object = {
-  userName: "batman",
-  subjects: ["english", "maths", "html"],
-
-  show: function () {
-    console.log("hello from school");
-  },
-
-  testSubject: {
-    hindi: 45,
-    maths: 77,
-    science: 66,
-    enlglish: 88,
+  subject: {
+    maths: 35,
+    english: 66,
+    hindi: 77,
   },
 };
 
-let arrray = ["hindi", "maths", "science", "english"];
 
-console.log(object.subjects[2]);
+let array = ["maths","english","hindi"]
 
+let sum = 0
+for(let i=0;i<array.length;i++){
+ sum+=  object.subject[array[i]]//"maths","english","hindi"
+}
 
-console.log(object.testSubject[arrray[1]])//object.testSubject["maths"]
-
-// object.show();
+console.log(sum)
