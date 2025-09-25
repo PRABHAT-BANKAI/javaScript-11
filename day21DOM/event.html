@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="text"></p>
+
+    <button id="btn">Click me</button>
+
+    <script>
+      let text = document.querySelector("#text");
+      let btn = document.querySelector("#btn");
+
+      btn.addEventListener("click", () => {
+        //callback function is a function where you passing function as an argument
+        console.log("hello ");
+        text.innerText = "event listerner";
+        text.style.color="red"
+        text.style.backgroundColor = "yellow"
+      }); //first argument event trigger name second argument for callback function
+    </script>
+  </body>
+</html>

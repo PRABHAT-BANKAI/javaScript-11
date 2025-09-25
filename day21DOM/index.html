@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DOM(Document object model)</h1>
+    <p>
+      DOM stands for the Document Object Model, which is a programming interface
+      that represents an HTML or XML document as a tree of nodes or objects. It
+      allows scripting languages, most commonly JavaScript, to dynamically
+      access and manipulate the structure, style, and content of a web page
+      after it has loaded in the browser
+    </p>
+
+    <p class="word"></p>
+    <!-- <p class="word"></p> -->
+
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+
+    <script>
+      // let heading = document.getElementById("text");
+
+      let heading = document.querySelector(".word");
+      console.log(heading)
+      heading.innerHTML = "gaming";
+
+      let mainHeaading = document.querySelectorAll("h2"); // return array
+      console.log(mainHeaading);
+
+
+      for(let i=0;i < mainHeaading.length;i++){// array elements length =   4   // 0 1 ,2,3
+        mainHeaading[i].innerHTML = i+1
+        
+      }
+
+      // query Selector (get single data) and querySelectorsAll(get in array data[])
+    </script>
+  </body>
+</html>
