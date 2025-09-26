@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="text" src="" alt="" height="200px" />
+    <br>
+    <button id="back">Back</button>
+    <button id="next">Next</button>
+
+    <script>
+      let text = document.querySelector("#text");
+      let back = document.querySelector("#back");
+      let next = document.querySelector("#next");
+
+      let data = [
+        "https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features4.jpg",
+        "https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/team1.jpg",
+        "https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/team2.jpg",
+      ]; // 2  //3-1
+      let count = 0;
+
+      function show() {
+        text.src = data[count]; // i have update when count value changed
+      }
+
+      next.addEventListener("click", () => {
+        count++;
+        if (count == data.length) {
+          count = 0;
+        }
+
+        show();
+      });
+
+      back.addEventListener("click", () => {
+        count--; //3
+        if (count == -1) {
+          // -1 === -1 true
+          //count = -1
+
+          count = data.length - 1; // count = 5-1 = 4
+          //count = 4
+        }
+
+        show();
+      });
+
+      show();
+    </script>
+  </body>
+</html>
