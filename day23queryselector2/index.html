@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text"></h1>
+    <button id="btn">Color change</button>
+    <br />
+
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <script>
+      let text = document.querySelector("#text");
+      let btn = document.querySelector("#btn");
+      let lists = document.querySelectorAll("li"); //tagname// return array
+      // let text2 = document.getElementById("text");
+      console.log(text); //<h1 id=text> </h1>//element
+
+      text.innerText = "<i>batman </i>"; // helps in text
+      text.innerHTML = "<i>batman </i>"; //help so to write tags in js
+
+      btn.addEventListener("click", () => {
+        text.style.color = "red";
+        btn.style.color = "green";
+      });
+
+      function show() {
+        text.style.color = "yellow";
+      }
+
+      text.addEventListener("click", show);
+
+      // let nameOfList = ["one", "two", "three", "four"];
+
+      //list[0] = <li>one  </li>.innerText = "one"
+      //list[1] = "two"
+      //list[2] = "three"
+      //list[3] = "four"
+
+      for (let i = 0; i < lists.length; i++) {
+        lists[i].innerHTML= i
+      }
+    </script>
+  </body>
+</html>
