@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Title</h1>
+    <p id="text"></p>
+    <h2 id="user"></h2>
+    <h5>hello sir</h5>
+    <h1 id="resultData"></h1>
+
+    <script>
+      // The DOM is a programming interface for web documents that represents the page as a structured tree of nodes and objects
+      let text = document.getElementById("text");
+      let resultData = document.querySelector("#resultData");
+      let user = document.querySelector("#user");
+      let data = document.querySelector("h5");
+      let num1 = 15;
+      let num2 = 20;
+      let userName = "batman";
+      // let result = num1 + num2;
+
+      // text.innerText = result;
+      // user.innerText = userName;
+      // data.innerText = "hello world";
+
+      let marks = 80;
+      let result = "";
+      if (marks >= 75) {
+        result = "passed";
+      } else {
+        result = "failed";
+      }
+      resultData.innerText = result;
+    </script>
+  </body>
+</html>
